@@ -1,0 +1,778 @@
+{
+  "annexes": [
+    {
+      "annexBlanks": [
+        {
+          "blankNumber": "0821846",
+          "idBlank": 131715158
+        }
+      ],
+      "idAnnex": 948283,
+      "idType": 1,
+      "ord": 1,
+      "pageCount": 1
+    }
+  ],
+  "applicant": {
+    "addlRegInfo": "",
+    "addresses": [
+      {
+        "flat": null,
+        "foreignCity": null,
+        "foreignDistrict": null,
+        "foreignHouse": null,
+        "foreignLocality": null,
+        "foreignStreet": null,
+        "fullAddress": "125171, РОССИЯ, ГОРОД МОСКВА, ШОССЕ ЛЕНИНГРАДСКОЕ, ДОМ 16А, СТРОЕНИЕ 3, ПОМЕЩЕНИЕ XII",
+        "gln": null,
+        "glonass": null,
+        "idAddrType": 1,
+        "idAddress": 17188857,
+        "idCity": null,
+        "idCodeOksm": "643",
+        "idDistrict": null,
+        "idHouse": null,
+        "idLocality": null,
+        "idStreet": null,
+        "idSubject": null,
+        "oksmShort": true,
+        "otherGln": null,
+        "postCode": null,
+        "uniqueAddress": null
+      }
+    ],
+    "contacts": [
+      {
+        "idContact": 4090243,
+        "idContactType": 1,
+        "value": "+74952133232"
+      },
+      {
+        "idContact": 4090244,
+        "idContactType": 1,
+        "value": "+74952133233"
+      },
+      {
+        "idContact": 4090245,
+        "idContactType": 4,
+        "value": "hotline@groupeseb.com"
+      }
+    ],
+    "firstName": "Наталья",
+    "fullName": "ЗАКРЫТОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО \"ГРУППА СЕБ-ВОСТОК\"",
+    "headPosition": "Менеджер по сертификации, на основании доверенности № 2020-0004 от 21.01.2020 г.",
+    "idApplicantType": 1,
+    "idEgrul": null,
+    "idLegalForm": 8,
+    "idLegalSubject": 6256813,
+    "idLegalSubjectType": 1,
+    "idPerson": 13021545,
+    "idPersonDoc": null,
+    "inn": "7714108299",
+    "isEecRegister": true,
+    "kpp": "774301001",
+    "ogrn": "1027700581589",
+    "ogrnAssignDate": "2002-12-27",
+    "passportIssueDate": null,
+    "passportIssuedBy": null,
+    "passportNum": null,
+    "patronymic": "Петровна",
+    "regDate": "2008-01-01",
+    "regOrganName": "Межрайонная инспекция Федеральной налоговой службы № 46 по г. Москве",
+    "shortName": "ЗАО \"ГРУППА СЕБ-ВОСТОК\"",
+    "surname": "Будчан",
+    "transnational": []
+  },
+  "applicantFilials": [
+    {
+      "addresses": [],
+      "annex": false,
+      "contacts": [],
+      "fullName": "",
+      "idFilial": 4106081,
+      "idLegalForm": 8,
+      "kpp": "774301001",
+      "shortName": "ЗАО \"ГРУППА СЕБ-ВОСТОК\""
+    },
+    {
+      "addresses": [],
+      "annex": false,
+      "contacts": [],
+      "fullName": "",
+      "idFilial": 4106082,
+      "idLegalForm": 8,
+      "kpp": "774301001",
+      "shortName": "ЗАО \"ГРУППА СЕБ-ВОСТОК\""
+    }
+  ],
+  "assignRegNumber": false,
+  "awaitForApprove": false,
+  "awaitOperatorCheck": null,
+  "batchInspection": false,
+  "blankNumber": "0316451",
+  "certEndDate": "2026-10-05",
+  "certRegDate": "2021-10-06",
+  "certificationAuthority": {
+    "accredOrgName": "Федеральная служба по аккредитации",
+    "addresses": [
+      {
+        "flat": null,
+        "foreignCity": null,
+        "foreignDistrict": null,
+        "foreignHouse": null,
+        "foreignLocality": null,
+        "foreignStreet": null,
+        "fullAddress": "125009, РОССИЯ, город Москва, пер. Газетный, 17, 3",
+        "gln": null,
+        "glonass": null,
+        "idAddrType": 1,
+        "idAddress": 17188860,
+        "idCity": null,
+        "idCodeOksm": "643",
+        "idDistrict": null,
+        "idHouse": null,
+        "idLocality": null,
+        "idStreet": "e01da83a-ab9a-4380-b2fe-9b809d823d05",
+        "idSubject": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+        "oksmShort": true,
+        "otherGln": null,
+        "postCode": "125009",
+        "uniqueAddress": null
+      },
+      {
+        "flat": "пом. 3",
+        "foreignCity": null,
+        "foreignDistrict": null,
+        "foreignHouse": null,
+        "foreignLocality": null,
+        "foreignStreet": null,
+        "fullAddress": "107241, РОССИЯ, город Москва, ул. Уральская, д.21, пом. 3",
+        "gln": null,
+        "glonass": null,
+        "idAddrType": 3,
+        "idAddress": 17188861,
+        "idCity": null,
+        "idCodeOksm": "643",
+        "idDistrict": null,
+        "idHouse": null,
+        "idLocality": null,
+        "idStreet": "851022a1-b61f-4ea4-9dfd-beec5adc3580",
+        "idSubject": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+        "oksmShort": true,
+        "otherGln": null,
+        "postCode": "107241",
+        "uniqueAddress": null
+      }
+    ],
+    "attestatEndDate": null,
+    "attestatRegDate": "2016-09-20",
+    "attestatRegNumber": "RA.RU.11АГ27",
+    "contacts": [
+      {
+        "idContact": 3734398,
+        "idContactType": 1,
+        "value": "+74959737646"
+      },
+      {
+        "idContact": 3734399,
+        "idContactType": 4,
+        "value": "interstandart@interstandart.com"
+      },
+      {
+        "idContact": 3734400,
+        "idContactType": 4,
+        "value": "info@interstandart.com"
+      },
+      {
+        "idContact": 3734401,
+        "idContactType": 5,
+        "value": "www.interstandart.com"
+      }
+    ],
+    "firstName": "Альбина",
+    "fullName": "Орган по сертификации продукции ООО \"ИНТЕРСТАНДАРТ\"",
+    "idCertificationAuthority": 3319001,
+    "idPerson": 13030104,
+    "idRal": 23029,
+    "ogrn": "1077746011100",
+    "patronymic": "Владимировна",
+    "prevAttestatRegNumber": null,
+    "prevIdRal": null,
+    "surname": "Евплова"
+  },
+  "changes": null,
+  "documents": {
+    "applicantOtherDocuments": [
+      {
+        "annex": false,
+        "date": "2021-10-06",
+        "id": 9460699,
+        "idCategory": 6,
+        "idTechnicalReglament": 11,
+        "name": "ОГРН",
+        "number": "б/н"
+      },
+      {
+        "annex": false,
+        "date": "2021-10-06",
+        "id": 9460700,
+        "idCategory": 6,
+        "idTechnicalReglament": 11,
+        "name": "ИНН",
+        "number": "б/н"
+      },
+      {
+        "annex": false,
+        "date": "2021-10-06",
+        "id": 9460702,
+        "idCategory": 6,
+        "idTechnicalReglament": 11,
+        "name": "Декларация идентичности",
+        "number": "б/н"
+      },
+      {
+        "annex": false,
+        "date": "2021-10-06",
+        "id": 9460704,
+        "idCategory": 6,
+        "idTechnicalReglament": 11,
+        "name": "РЭ + ТБ",
+        "number": "б/н"
+      },
+      {
+        "annex": false,
+        "date": "2021-10-06",
+        "id": 9460705,
+        "idCategory": 6,
+        "idTechnicalReglament": 11,
+        "name": "Сертификат НВО",
+        "number": "б/н"
+      },
+      {
+        "annex": false,
+        "date": "2021-08-30",
+        "id": 9460703,
+        "idCategory": 6,
+        "idTechnicalReglament": 11,
+        "name": "Декларация СМК",
+        "number": "б/н"
+      },
+      {
+        "annex": false,
+        "date": "2020-06-24",
+        "id": 9460701,
+        "idCategory": 6,
+        "idTechnicalReglament": 11,
+        "name": "ISO",
+        "number": "146926-2013-AQ-FRA-COFRAC Rev.12"
+      }
+    ],
+    "applicationCertificationDecision": {
+      "date": null,
+      "id": 9444619,
+      "idTechnicalReglament": 11,
+      "number": null
+    },
+    "commonDocuments": {},
+    "conformityAssessmentDocuments": [],
+    "expertConclusion": {
+      "accreditedPersonName": null,
+      "annex": false,
+      "attestateBeginDate": null,
+      "attestateEndDate": null,
+      "attestateRegNumber": null,
+      "date": "2021-10-04",
+      "id": 9460787,
+      "idCategory": null,
+      "idTechnicalReglament": 11,
+      "name": "Заключение эксперта",
+      "number": "б/н"
+    },
+    "foreignManufacturerContract": {
+      "applicantResponsibility": null,
+      "date": null,
+      "endDate": null,
+      "id": 9444620,
+      "idTechnicalReglament": 11,
+      "manufacturerResponsibility": null,
+      "number": null,
+      "subject": null
+    },
+    "manufacturingConditionAnalysisActs": [
+      {
+        "addresses": [],
+        "analysisBeginDate": null,
+        "analysisEndDate": null,
+        "analysisTakenDate": null,
+        "annex": false,
+        "certExperts": [
+          {
+            "firstName": "Илья",
+            "idEmployee": 210454,
+            "idExpert": 2798711,
+            "idPerson": 13021550,
+            "patronimyc": "Анатольевич",
+            "surname": "Вилков"
+          },
+          {
+            "firstName": "Венера",
+            "idEmployee": 210456,
+            "idExpert": 2798712,
+            "idPerson": 13021551,
+            "patronimyc": "Шамильевна",
+            "surname": "Смоляженкова"
+          }
+        ],
+        "date": "2021-10-01",
+        "id": 9444616,
+        "idTechnicalReglament": 11,
+        "number": "01-10-21/01"
+      }
+    ],
+    "productCertificationContract": {
+      "date": null,
+      "id": 9444618,
+      "idTechnicalReglament": 11,
+      "number": null
+    },
+    "productDesignResearchConclusion": {
+      "accreditedPersonName": null,
+      "annex": false,
+      "attestatEndDate": null,
+      "attestatRegDate": null,
+      "attestatRegNumber": null,
+      "id": 9444614,
+      "idTechnicalReglament": 11,
+      "issueDate": null,
+      "number": null
+    },
+    "productTypeCertificates": [
+      {
+        "accreditedPersonName": null,
+        "annex": false,
+        "attestatEndDate": null,
+        "attestatRegDate": null,
+        "attestatRegNumber": null,
+        "id": 9444613,
+        "idTechnicalReglament": 11,
+        "issueDate": null,
+        "number": null,
+        "sampleProduct": null
+      }
+    ],
+    "productTypeResearchConclusion": {
+      "accreditedPersonName": null,
+      "annex": false,
+      "attestatEndDate": null,
+      "attestatRegDate": null,
+      "attestatRegNumber": null,
+      "id": 9444612,
+      "idTechnicalReglament": 11,
+      "issueDate": null,
+      "number": null,
+      "sampleProduct": null
+    },
+    "protocolTestingTechnicalService": {
+      "annex": false,
+      "date": null,
+      "id": 9460788,
+      "idCategory": null,
+      "idTechnicalReglament": 11,
+      "name": null,
+      "number": null,
+      "techServiceName": null
+    },
+    "qmsCertificates": [
+      {
+        "accredEec": true,
+        "accreditedPersonName": null,
+        "annex": false,
+        "attestatEndDate": null,
+        "attestatRegDate": null,
+        "attestatRegNumber": null,
+        "endDate": null,
+        "id": 9444615,
+        "idAccredPlace": "643",
+        "idTechnicalReglament": 11,
+        "idType": null,
+        "idTypeActivity": null,
+        "issueDate": null,
+        "number": null,
+        "qmsCertificationDocuments": []
+      }
+    ],
+    "rawMaterialCertificates": [],
+    "reportsOnTypeApprovalUnderUNRegulation": [
+      {
+        "annex": false,
+        "country": "643",
+        "date": null,
+        "id": 9460786,
+        "idCategory": null,
+        "idTechnicalReglament": 11,
+        "name": null,
+        "number": null,
+        "orgName": null
+      }
+    ],
+    "samplingAct": {
+      "date": "2021-08-30",
+      "id": 9444617,
+      "idTechnicalReglament": 11,
+      "number": "3112/2"
+    },
+    "vehicleChassisTypeApprovals": []
+  },
+  "editApp": true,
+  "experts": [
+    {
+      "firstName": "Максим",
+      "idEmployee": 241426,
+      "idExpert": 2798710,
+      "idPerson": 13021548,
+      "patronimyc": "Геннадьевич",
+      "surname": "Смоляженков"
+    },
+    {
+      "firstName": "Илья",
+      "idEmployee": 210454,
+      "idExpert": 2798711,
+      "idPerson": 13021550,
+      "patronimyc": "Анатольевич",
+      "surname": "Вилков"
+    },
+    {
+      "firstName": "Венера",
+      "idEmployee": 210456,
+      "idExpert": 2798712,
+      "idPerson": 13021551,
+      "patronimyc": "Шамильевна",
+      "surname": "Смоляженкова"
+    }
+  ],
+  "expiredInspectionControl": false,
+  "firstName": "Илья",
+  "idBlank": 131723081,
+  "idCertBasis": null,
+  "idCertScheme": 1,
+  "idCertType": 1,
+  "idCertificate": 2972253,
+  "idDeclarationChecker": null,
+  "idEmployee": 210454,
+  "idFgisRaV1": null,
+  "idMrpa": null,
+  "idObjectCertType": 3,
+  "idProductSingleLists": [],
+  "idSigner": 13021547,
+  "idStatus": 6,
+  "idTechnicalReglaments": [
+    11,
+    24
+  ],
+  "inspectionControlPlanDate": "2022-10-06",
+  "isBlock": false,
+  "isCanPublish": true,
+  "isTs": true,
+  "manufIsApplicant": false,
+  "manufacturer": {
+    "addlRegInfo": "",
+    "addresses": [
+      {
+        "flat": null,
+        "foreignCity": null,
+        "foreignDistrict": "112 Chemin du Moulin Carron 69130 ECULLY (географические координаты: 45.798191, 4.772658)",
+        "foreignHouse": null,
+        "foreignLocality": null,
+        "foreignStreet": null,
+        "fullAddress": "ФРАНЦИЯ, 112 Chemin du Moulin Carron 69130 ECULLY (географические координаты: 45.798191, 4.772658), ",
+        "gln": null,
+        "glonass": null,
+        "idAddrType": 1,
+        "idAddress": 17188858,
+        "idCity": null,
+        "idCodeOksm": "250",
+        "idDistrict": null,
+        "idHouse": null,
+        "idLocality": null,
+        "idStreet": null,
+        "idSubject": null,
+        "oksmShort": true,
+        "otherGln": null,
+        "postCode": null,
+        "uniqueAddress": null
+      }
+    ],
+    "contacts": [],
+    "firstName": "",
+    "fullName": "«GROUPE SEB»",
+    "headPosition": "",
+    "idEgrul": null,
+    "idLegalForm": null,
+    "idLegalSubject": 6256814,
+    "idLegalSubjectType": 3,
+    "idPerson": 13021546,
+    "idPersonDoc": null,
+    "inn": "",
+    "isEecRegister": true,
+    "kpp": "",
+    "ogrn": "",
+    "ogrnAssignDate": null,
+    "passportIssueDate": null,
+    "passportIssuedBy": null,
+    "passportNum": null,
+    "patronymic": "",
+    "regDate": null,
+    "regOrganName": "",
+    "shortName": "",
+    "surname": "",
+    "transnational": []
+  },
+  "manufacturerFilials": [
+    {
+      "addresses": [
+        {
+          "flat": null,
+          "foreignCity": null,
+          "foreignDistrict": "№3, Shiji West Street, Shaoxing City, 312017, Zhejiang Province (географические координаты: 30.085521, 120.593788)",
+          "foreignHouse": null,
+          "foreignLocality": null,
+          "foreignStreet": null,
+          "fullAddress": "КИТАЙ, №3, Shiji West Street, Shaoxing City, 312017, Zhejiang Province (географические координаты: 30.085521, 120.593788), ",
+          "gln": null,
+          "glonass": null,
+          "idAddrType": 3,
+          "idAddress": 17188859,
+          "idCity": null,
+          "idCodeOksm": "156",
+          "idDistrict": null,
+          "idHouse": null,
+          "idLocality": null,
+          "idStreet": null,
+          "idSubject": null,
+          "oksmShort": true,
+          "otherGln": null,
+          "postCode": null,
+          "uniqueAddress": null
+        }
+      ],
+      "annex": false,
+      "contacts": [],
+      "fullName": "«Zhejiang Shaoxing Supor Domestic Electrical Appliances Co., Ltd.»",
+      "idFilial": 4106083,
+      "idLegalForm": null,
+      "kpp": null,
+      "shortName": null
+    }
+  ],
+  "noSanction": true,
+  "number": "ЕАЭС RU С-FR.АГ27.В.00496/21",
+  "patronymic": "Анатольевич",
+  "product": {
+    "batchId": null,
+    "batchSize": null,
+    "fullName": "Хлебопечки электрические бытовые",
+    "idProduct": 3042542,
+    "idProductOrigin": "250",
+    "identification": null,
+    "identifications": [
+      {
+        "amount": null,
+        "annex": false,
+        "article": "",
+        "description": null,
+        "documents": [
+          {
+            "date": null,
+            "id": 9444624,
+            "name": "техническая и конструкторская документация изготовителя",
+            "number": null
+          }
+        ],
+        "expiryDate": null,
+        "factoryNumber": null,
+        "gtin": [
+          ""
+        ],
+        "idIdentification": 5321628,
+        "idOkei": null,
+        "idOkpds": [],
+        "idTnveds": [
+          74267
+        ],
+        "lifeTime": null,
+        "model": "OW250xxx, OW251xxx (где х – это любая цифра от 0 до 9 и/или буква от A до Z, обозначающие цвет изделия и страну назначения)",
+        "name": "Хлебопечки электрические бытовые",
+        "productionDate": null,
+        "sort": "",
+        "standards": [
+          {
+            "addlInfo": null,
+            "annex": true,
+            "designation": "ГОСТ 30804.3.3-2013",
+            "idDictStandard": null,
+            "idStandard": 4266476,
+            "idStatus": 1,
+            "name": "Совместимость технических средств электромагнитная. Ограничение изменений напряжения, колебаний напряжения и фликера в низковольтных системах электроснабжения общего назначения. Технические средства с потребляемым током не более 16 А (в одной фазе), подключаемые к электрической сети при несоблюдении определенных условий подключения. Нормы и методы испытаний",
+            "section": "Раздел 5"
+          },
+          {
+            "addlInfo": null,
+            "annex": true,
+            "designation": "ГОСТ 30804.3.2-2013",
+            "idDictStandard": null,
+            "idStandard": 4266477,
+            "idStatus": 1,
+            "name": "Совместимость технических средств электромагнитная. Эмиссия гармонических составляющих тока техническими средствами с потребляемым током не более 16 А (в одной фазе). Нормы и методы испытаний",
+            "section": "Разделы 5 и 7"
+          },
+          {
+            "addlInfo": null,
+            "annex": true,
+            "designation": "ГОСТ 30805.14.2-2013",
+            "idDictStandard": null,
+            "idStandard": 4266478,
+            "idStatus": 1,
+            "name": "Совместимость технических средств электромагнитная. Бытовые приборы, электрические инструменты и аналогичные устройства. Устойчивость к электромагнитным помехам. Требования и методы испытаний",
+            "section": "Разделы 4 и 5, подраздел 7.2"
+          },
+          {
+            "addlInfo": null,
+            "annex": true,
+            "designation": "ГОСТ 30805.14.1-2013",
+            "idDictStandard": null,
+            "idStandard": 4266479,
+            "idStatus": 1,
+            "name": "Совместимость технических средств электромагнитная. Бытовые приборы, электрические инструменты и аналогичные устройства. Радиопомехи индустриальные. Нормы и методы измерений",
+            "section": "Раздел 4"
+          },
+          {
+            "addlInfo": null,
+            "annex": true,
+            "designation": "ГОСT EN 62233-2013",
+            "idDictStandard": null,
+            "idStandard": 4266480,
+            "idStatus": 1,
+            "name": "Методы измерений электромагнитных полей, создаваемых бытовыми и аналогичными электрическими приборами, в части их воздействия на человека",
+            "section": "Раздел 6"
+          },
+          {
+            "addlInfo": null,
+            "annex": true,
+            "designation": "ГОСТ IEC 60335-2-9-2013",
+            "idDictStandard": null,
+            "idStandard": 4266481,
+            "idStatus": 1,
+            "name": "Безопасность бытовых и аналогичных электрических приборов. Часть 2.9. Частные требования к грилям, тостерам и аналогичным переносным приборам для приготовления пищи",
+            "section": "Стандарт в целом"
+          }
+        ],
+        "storageTime": null,
+        "tradeMark": "«Moulinex»",
+        "type": ""
+      }
+    ],
+    "marking": null,
+    "storageCondition": "Условия хранения: продукция хранится в сухих, проветриваемых складских помещениях при температуре от 0˚С до +40˚С, при относительной влажности воздуха не более 90 %. Срок хранения: изготовителем не установлен. Срок службы: 2 года",
+    "usageCondition": null,
+    "usageScope": null
+  },
+  "productGroups": [
+    {
+      "idGroup": 1139,
+      "idProductGroup": 943229,
+      "idTechReg": 11
+    },
+    {
+      "idGroup": 320,
+      "idProductGroup": 943230,
+      "idTechReg": 11
+    }
+  ],
+  "productInfoOon106": null,
+  "productMatchOON106": null,
+  "replacedBy": null,
+  "replacement": null,
+  "showInOpenPart": true,
+  "statusChanges": [
+    {
+      "beginDate": "2021-10-06T12:31:43.24",
+      "comment": null,
+      "docDate": null,
+      "docName": null,
+      "docNumber": null,
+      "endDate": null,
+      "idBasis": null,
+      "idBasisSolutions": [],
+      "idChangeStatus": 5528165,
+      "idFileScan": null,
+      "idMrpa": null,
+      "idOngoingEvent": null,
+      "idStatus": 6,
+      "levelStateControl": null,
+      "lkType": "dict.orgtypes.os",
+      "publicated": true,
+      "publishDate": "2021-10-06T12:31:46.423",
+      "typeStateControl": null
+    }
+  ],
+  "surname": "Вилков",
+  "testingLabs": [
+    {
+      "accredEec": true,
+      "actDate": null,
+      "actIdentificationDate": null,
+      "actIdentificationNumber": null,
+      "actNumber": null,
+      "annex": false,
+      "basis": null,
+      "beginDate": "2015-10-30",
+      "docConfirmCustom": [
+        {
+          "customInfo": [
+            {
+              "customDeclNumber": "10005030/140521/0225045",
+              "idCustomInfo": 533998
+            }
+          ],
+          "idDocConfirmCustom": 306367,
+          "idDocConfirmCustomType": 1,
+          "otherDocs": [],
+          "reasonNonRegistrCustomsDeclaration": null
+        }
+      ],
+      "endDate": null,
+      "fullName": "Испытательная лаборатория \"ГИЦ телевизоров\" ЗАО \"МНИТИ\"",
+      "idAccredPlace": "643",
+      "idRal": null,
+      "idTestingLab": 2904815,
+      "importedForResearchTesting": true,
+      "protocols": [
+        {
+          "date": "2021-09-20",
+          "idProtocol": 997439,
+          "idProtocolRpi": 221807437,
+          "isProtocolInvalid": false,
+          "number": "72/09/21/ТС-ИС",
+          "standards": []
+        },
+        {
+          "date": "2021-09-20",
+          "idProtocol": 997438,
+          "idProtocolRpi": 221807051,
+          "isProtocolInvalid": false,
+          "number": "71/09/21/ТС-ИС",
+          "standards": []
+        },
+        {
+          "date": "2021-09-20",
+          "idProtocol": 997437,
+          "idProtocolRpi": 221806292,
+          "isProtocolInvalid": false,
+          "number": "70/09/21/ТС-ИС",
+          "standards": []
+        }
+      ],
+      "regNumber": "RA.RU.21МО56"
+    }
+  ]
+}

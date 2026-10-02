@@ -55,11 +55,13 @@ DOC_KINDS = {
         "title": "Сертификат",
         "list_url": f"{BASE}/api/v1/rss/common/certificates/get",
         "detail_url": f"{BASE}/api/v1/rss/common/certificates/{{id}}",
+        "sort_column": "endDate",
     },
     "declarations": {
         "title": "Декларация",
         "list_url": f"{BASE}/api/v1/rds/common/declarations/get",
         "detail_url": f"{BASE}/api/v1/rds/common/declarations/{{id}}",
+        "sort_column": "declEndDate",  # у сущности SearchDeclaration нет поля endDate
     },
 }
 STATUS_ACTIVE = 6  # статус «Действует»
@@ -236,7 +238,7 @@ class FsaClient:
                 "awaitForApprove": None, "awaitOperatorCheck": None, "editApp": None,
                 "violationSend": None, "isProtected": None, "isNotAccredited": None,
             },
-            "columnsSort": [{"column": "endDate", "sort": "ASC"}],
+            "columnsSort": [{"column": DOC_KINDS[kind]["sort_column"], "sort": "ASC"}],
         }
         return self._request("POST", DOC_KINDS[kind]["list_url"], data=json.dumps(body))
 
