@@ -69,6 +69,9 @@ STATUS_ACTIVE = 6  # статус «Действует»
 COLUMN_TITLES = {
     "company": "Наименование юрлица",
     "head": "ФИО руководителя",
+    "last_name": "Фамилия",
+    "first_name": "Имя",
+    "patronymic": "Отчество",
     "number": "Номер документа",
     "doc_type": "Тип документа",
     "end_date": "Дата окончания",
@@ -76,7 +79,7 @@ COLUMN_TITLES = {
     "email": "Электронный адрес",
     "product": "Наименование продукции",
 }
-COLUMN_WIDTHS = {"company": 34, "head": 26, "number": 34, "doc_type": 14,
+COLUMN_WIDTHS = {"company": 34, "head": 26, "last_name": 18, "first_name": 16, "patronymic": 20, "number": 34, "doc_type": 14,
                  "end_date": 16, "days_left": 14, "email": 30, "product": 50}
 
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
@@ -105,6 +108,7 @@ def load_config(path):
         "prefix": cp.get("output", "file_prefix", fallback="fsa").strip(),
         "columns": [c for c in lst("output", "columns") if c in COLUMN_TITLES]
                    or list(COLUMN_TITLES),
+        "name_case": cp.get("output", "name_case", fallback="title").strip().lower(),
         "urgent": cp.getint("output", "urgent_days", fallback=30),
         "preview": cp.getint("output", "preview_rows", fallback=7),
         "page_size": min(cp.getint("network", "page_size", fallback=100), 100),
@@ -345,14 +349,46 @@ def applicant_key(item):
     return f"n:{n}" if n else None
 
 
-def build_row(kind, item, info, today):
+NAME_PARTICLES = {"оглы", "огли", "кызы", "кизи", "гызы", "угли", "улы", "кзы"}
+
+
+def clean_name(name, mode="title"):
+    """title - ЗАГЛАВНЫЕ буквы превращаем в обычный регистр; registry - как в реестре."""
+    name = " ".join(str(name or "").split())
+    if mode == "registry":
+        return name
+    out = []
+    for w in name.split(" "):
+        if w.lower() in NAME_PARTICLES:
+            out.append(w.lower())
+        elif w.isupper():
+            out.append(w.title())
+        else:
+            out.append(w)
+    return " ".join(out)
+
+
+def split_name(name):
+    """В реестре порядок: Фамилия Имя Отчество. 'Мамед оглы' остаётся в отчестве целиком."""
+    parts = name.split()
+    if not parts:
+        return "", "", ""
+    return parts[0], (parts[1] if len(parts) > 1 else ""), " ".join(parts[2:])
+
+
+def build_row(kind, item, info, today, name_case="title"):
     info = info or {}
+    head = clean_name(info.get("head", ""), name_case)
+    last_name, first_name, patronymic = split_name(head)
     end = parse_date(first_key(item, "certEndDate", "declEndDate", "endDate", suffix="EndDate"))
     company = info.get("company") or first_key(item, "applicantName") or ""
     product = first_key(item, "productFullName", "productName") or ""
     return {
         "company": str(company).strip(),
-        "head": info.get("head", ""),
+        "head": head,
+        "last_name": last_name,
+        "first_name": first_name,
+        "patronymic": patronymic,
         "number": str(first_key(item, "number") or "").strip(),
         "doc_type": DOC_KINDS[kind]["title"],
         "end_date": end,
@@ -574,7 +610,7 @@ def run(cfg, debug=False):
 
     rows = []
     for kind, it in pool:
-        row = build_row(kind, it, infos.get(f"{kind}:{it['id']}"), today)
+        row = build_row(kind, it, infos.get(f"{kind}:{it['id']}"), today, cfg["name_case"])
         if row["end_date"] and 0 <= row["days_left"] <= cfg["days"]:
             rows.append(row)
     rows.sort(key=lambda r: (r["days_left"], r["company"]))
