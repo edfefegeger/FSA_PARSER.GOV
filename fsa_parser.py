@@ -66,6 +66,85 @@ DOC_KINDS = {
 }
 STATUS_ACTIVE = 6  # статус «Действует»
 
+# Справочник ТР из фильтра сайта: название -> внутренний код (по нему сайт сам отбирает документы)
+TECH_REGS = {
+    "Решение Совета ЕЭК от 18.04.2018 № 44": 4511534,
+    "ТР ТС 001/2011": 33,
+    "ТР ТС 002/2011": 18,
+    "ТР ТС 003/2011": 37,
+    "ТР ТС 004/2011": 11,
+    "ТР ТС 005/2011": 38,
+    "ТР ТС 006/2011": 1,
+    "ТР ТС 007/2011": 39,
+    "ТР ТС 008/2011": 17,
+    "ТР ТС 009/2011": 28,
+    "ТР ТС 010/2011": 14,
+    "ТР ТС 011/2011": 6,
+    "ТР ТС 012/2011": 12,
+    "ТР ТС 013/2011": 31,
+    "ТР ТС 014/2011": 29,
+    "ТР ТС 015/2011": 32,
+    "ТР ТС 016/2011": 16,
+    "ТР ТС 017/2011": 8,
+    "ТР ТС 018/2011": 30,
+    "ТР ТС 019/2011": 36,
+    "ТР ТС 020/2011": 24,
+    "ТР ТС 021/2011": 27,
+    "ТР ТС 022/2011": 97161,
+    "ТР ТС 023/2011": 22,
+    "ТР ТС 024/2011": 20,
+    "ТР ТС 025/2012": 4521250,
+    "ТР ТС 026/2012": 40,
+    "ТР ТС 027/2012": 97185,
+    "ТР ТС 028/2012": 26,
+    "ТР ТС 029/2012": 23,
+    "ТР ТС 030/2012": 34,
+    "ТР ТС 031/2012": 10,
+    "ТР ТС 032/2013": 5,
+    "ТР ТС 033/2013": 21,
+    "ТР ТС 034/2013": 2,
+    "ТР ТС 035/2014": 35,
+    "ТР ЕАЭС 036/2016": 97149,
+    "ТР ЕАЭС 037/2016": 4501729,
+    "ТР ЕАЭС 038/2016": 97167,
+    "ТР ЕАЭС 039/2016": 97156,
+    "ТР ЕАЭС 040/2016": 15,
+    "ТР ЕАЭС 041/2017": 97209,
+    "ТР ЕАЭС 042/2017": 97210,
+    "ТР ЕАЭС 043/2017": 97211,
+    "ТР ЕАЭС 044/2017": 97208,
+    "ТР ЕАЭС 045/2017": 99333,
+    "ТР ЕАЭС 046/2018": 4507056,
+    "ТР ЕАЭС 047/2018": 101330,
+    "123-ФЗ": 56,
+    "ТР РФ 007/2008": 49,
+    "ТР РФ 015/2009": 97187,
+    "ТР РФ 016/2010": 97170,
+    "ТР РФ 022/2010": 97163,
+    "ТР РФ 023/2010": 60,
+    "ТР РФ 024/2010": 97169,
+    "ГОСТ Р 54008-2022": 4518156,
+    "ТР ЕАЭС 052/2021": 4522924,
+    "ТР ЕАЭС 050/2021": 4517710,
+    "ТР ЕАЭС 051/2021": 4516872,
+    "ТР ЕАЭС 048/2019": 4508584,
+    "126-ФЗ": 98706,
+}
+
+# Полные названия самых частых регламентов (для столбца в выгрузке)
+TECH_REG_TITLES = {
+    "ТР ТС 005/2011": "О безопасности упаковки",
+    "ТР ТС 021/2011": "О безопасности пищевой продукции",
+    "ТР ТС 022/2011": "Пищевая продукция в части ее маркировки",
+    "ТР ТС 023/2011": "Технический регламент на соковую продукцию из фруктов и овощей",
+    "ТР ТС 024/2011": "Технический регламент на масложировую продукцию",
+    "ТР ТС 027/2012": "О безопасности отдельных видов специализированной пищевой продукции",
+    "ТР ТС 029/2012": "Требования безопасности пищевых добавок, ароматизаторов и технологических вспомогательных средств",
+    "ТР ТС 033/2013": "О безопасности молока и молочной продукции",
+    "ТР ТС 034/2013": "О безопасности мяса и мясной продукции",
+    "ТР ЕАЭС 040/2016": "О безопасности рыбы и рыбной продукции",
+}
+
 COLUMN_TITLES = {
     "company": "Наименование юрлица",
     "head": "ФИО руководителя",
@@ -78,9 +157,10 @@ COLUMN_TITLES = {
     "days_left": "Дней до конца",
     "email": "Электронный адрес",
     "product": "Наименование продукции",
+    "tech_reg": "Наименование ТР ТС",
 }
 COLUMN_WIDTHS = {"company": 34, "head": 26, "last_name": 18, "first_name": 16, "patronymic": 20, "number": 34, "doc_type": 14,
-                 "end_date": 16, "days_left": 14, "email": 30, "product": 50}
+                 "end_date": 16, "days_left": 14, "email": 30, "product": 50, "tech_reg": 40}
 
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 
@@ -88,6 +168,29 @@ EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
 # ----------------------------------------------------------------------------
 # Настройки
 # ----------------------------------------------------------------------------
+def tech_reg_label(name):
+    t = TECH_REG_TITLES.get(name)
+    return f"{name} ({t})" if t else name
+
+
+def resolve_tech_regs(raw_items):
+    """'ТР ТС 021/2011', '021/2011', 'тр еаэс 040/2016' -> [(название, код)]."""
+    out = []
+    for raw in raw_items:
+        m = re.search(r"(\d{3})\s*/\s*(\d{4})", raw)
+        if not m:
+            sys.exit(f"В tech_regs не понятен номер: «{raw}». Пример: ТР ТС 021/2011")
+        num = f"{m[1]}/{m[2]}"
+        found = [k for k in TECH_REGS if k.endswith(" " + num)]
+        if not found:
+            sys.exit(f"ТР «{raw}» нет в справочнике сайта. Список доступных: python fsa_parser.py --list-tr")
+        pick = next((k for k in found if k.split()[1].lower() in raw.lower().replace(" ", "")
+                     or k.split()[1].lower() in raw.lower()), found[0]) if len(found) > 1 else found[0]
+        if (pick, TECH_REGS[pick]) not in out:
+            out.append((pick, TECH_REGS[pick]))
+    return out
+
+
 def load_config(path):
     cp = configparser.ConfigParser(inline_comment_prefixes=None)
     if not Path(path).exists():
@@ -101,6 +204,7 @@ def load_config(path):
     cfg = {
         "days": cp.getint("filter", "days_threshold", fallback=60),
         "keywords": [k.lower() for k in lst("filter", "product_keywords")],
+        "tech_regs": resolve_tech_regs(lst("filter", "tech_regs")),
         "kinds": [k for k in lst("filter", "document_types", "certificates,declarations")
                   if k in DOC_KINDS],
         "format": cp.get("output", "format", fallback="xlsx").strip().lower(),
@@ -137,6 +241,10 @@ class ApiBadRequest(RuntimeError):
 
 class NetworkGiveUp(RuntimeError):
     """Сеть/сайт не отвечает (вероятно, блокировка IP). Дальше стучаться нельзя."""
+
+
+class FilterIgnored(NetworkGiveUp):
+    """Сайт не применил фильтр по ТР ТС - выгрузка получилась бы неверной."""
 
 
 class RunLimit(NetworkGiveUp):
@@ -226,7 +334,7 @@ class FsaClient:
                 time.sleep(wait)
         raise NetworkGiveUp(f"сайт не отвечает ({str(last)[:150]}). Возможно, IP временно заблокирован")
 
-    def list_page(self, kind, page, size, d_from, d_to):
+    def list_page(self, kind, page, size, d_from, d_to, tr_id=None):
         body = {
             "size": size,
             "page": page,
@@ -235,7 +343,7 @@ class FsaClient:
                 "endDate": {"minDate": d_from.isoformat(), "maxDate": d_to.isoformat()},
                 "regDate": {"minDate": None, "maxDate": None},
                 "idCertType": [], "idObjectType": [], "idProductType": [],
-                "idGroupRU": [], "idGroupEEU": [], "idTechReg": [], "idApplicantType": [],
+                "idGroupRU": [], "idGroupEEU": [], "idTechReg": [tr_id] if tr_id else [], "idApplicantType": [],
                 "idCertScheme": [], "idDeclScheme": [], "idProductOrigin": [],
                 "idProductEEU": [], "idProductRU": [],
                 "columnsSearch": [],
@@ -376,7 +484,7 @@ def split_name(name):
     return parts[0], (parts[1] if len(parts) > 1 else ""), " ".join(parts[2:])
 
 
-def build_row(kind, item, info, today, name_case="title"):
+def build_row(kind, item, info, today, name_case="title", tech_regs=()):
     info = info or {}
     head = clean_name(info.get("head", ""), name_case)
     last_name, first_name, patronymic = split_name(head)
@@ -395,6 +503,7 @@ def build_row(kind, item, info, today, name_case="title"):
         "days_left": (end - today).days if end else None,
         "email": info.get("email", ""),
         "product": str(product).strip().replace("\n", " "),
+        "tech_reg": "; ".join(tech_reg_label(n) for n in sorted(tech_regs)),
         "_has_info": bool(info),
     }
 
@@ -417,16 +526,19 @@ class Cache:
         for sect in ("details", "apps"):
             self.data[sect] = {k: v for k, v in self.data[sect].items() if now - v.get("t", 0) < ttl}
         self._dirty = 0
+        self._last_save = time.time()
 
     def save(self):
         tmp = self.path.with_suffix(".tmp")
         tmp.write_text(json.dumps(self.data, ensure_ascii=False), encoding="utf-8")
         os.replace(tmp, self.path)                     # запись атомарная - файл не испортится при обрыве
         self._dirty = 0
+        self._last_save = time.time()
 
     def put_window(self, key, items):
         self.data["windows"][key] = items
-        self.save()
+        if time.time() - self._last_save > 20:       # на диск - не чаще раза в 20 сек (и при выходе)
+            self.save()
 
     def get_info(self, doc_key, app_key):
         v = self.data["details"].get(doc_key) or (self.data["apps"].get(app_key) if app_key else None)
@@ -459,8 +571,17 @@ def progress(done, total, label, unit=None):
 MAX_WINDOW = 1500   # если в окне больше записей - делим окно пополам
 
 
-def absorb(cfg, items, acc):
+def slim(it):
+    """В кэш пишем только нужные поля - файл кэша остаётся небольшим."""
+    keep = ("id", "number", "productFullName", "productName", "applicantName", "applicantInn",
+            "applicantINN", "inn", "idApplicant")
+    return {k: v for k, v in it.items() if k in keep or k.lower().endswith("enddate")}
+
+
+def absorb(cfg, items, acc, tr_name=None):
     for it in items:
+        if tr_name:                                  # один документ может подпадать под несколько ТР
+            acc["trs"].setdefault(it.get("id"), set()).add(tr_name)
         if it.get("id") in acc["seen"]:
             continue
         acc["seen"].add(it.get("id"))
@@ -469,12 +590,13 @@ def absorb(cfg, items, acc):
             acc["matched"].append(it)
 
 
-def fetch_window(client, kind, cfg, cache, a, b, acc, state):
+def fetch_window(client, kind, cfg, cache, a, b, acc, state, tr=None):
     """Читает все страницы за окно дат [a, b]. При лимитах сайта делит окно пополам."""
-    key = f"{kind}|{a}|{b}|{date.today()}"
+    tr_name, tr_id = tr if tr else (None, None)
+    key = f"{kind}|{tr_id}|{a}|{b}|{date.today()}"
     cached = cache.data["windows"].get(key)
     if cached is not None:                       # окно уже загружено ранее - сайт не трогаем
-        absorb(cfg, cached, acc)
+        absorb(cfg, cached, acc, tr_name)
         return
 
     def split():
@@ -485,12 +607,12 @@ def fetch_window(client, kind, cfg, cache, a, b, acc, state):
         else:
             parts = [(a, a), (b, b)]
         for x, y in parts:
-            fetch_window(client, kind, cfg, cache, x, y, acc, state)
+            fetch_window(client, kind, cfg, cache, x, y, acc, state, tr)
 
     page, got = 0, []
     while True:
         try:
-            resp = client.list_page(kind, page, cfg["page_size"], a, b)
+            resp = client.list_page(kind, page, cfg["page_size"], a, b, tr_id)
         except ApiBadRequest as e:
             if a < b:
                 return split()
@@ -500,21 +622,34 @@ def fetch_window(client, kind, cfg, cache, a, b, acc, state):
         if page == 0 and total > MAX_WINDOW and a < b:
             return split()
         items = resp.get("items") or []
-        got += items
-        absorb(cfg, items, acc)
-        progress(len(acc["seen"]), state["done_days"], f"{DOC_KINDS[kind]['title']} {a:%d.%m}:", unit="дн.")
+        got += [slim(i) for i in items]
+        absorb(cfg, items, acc, tr_name)
+        label = f"{DOC_KINDS[kind]['title']} {tr_name + ' ' if tr_name else ''}{a:%d.%m}:"
+        progress(len(acc["seen"]), state["done_days"], label, unit="дн.")
         if not items or (page + 1) * cfg["page_size"] >= total:
             cache.put_window(key, got)
             return
         page += 1
 
 
-def fetch_candidates(client, kind, cfg, cache, d_from, d_to, acc, state):
+def check_tech_reg_filter(client, kind, cfg, d_from, d_to):
+    """Страховка: если сайт игнорирует фильтр по ТР, остановиться, а не выгрузить весь реестр под видом отобранного."""
+    if not cfg["tech_regs"]:
+        return
+    base = client.list_page(kind, 0, 10, d_from, d_to).get("total") or 0
+    one = client.list_page(kind, 0, 10, d_from, d_to, cfg["tech_regs"][0][1]).get("total") or 0
+    if base > 200 and one >= base:
+        raise FilterIgnored(
+            f"сайт не применил фильтр по ТР для «{DOC_KINDS[kind]['title']}» "
+            f"({one} из {base} документов). Пришлите разработчику вывод 'python fsa_parser.py --debug'")
+
+
+def fetch_candidates(client, kind, cfg, cache, d_from, d_to, acc, state, tr=None):
     """Читает реестр окнами по нескольку дней. Результат накапливается в acc, даже если упадём на полпути."""
     cur = d_from
     while cur <= d_to:
         end = min(cur + timedelta(days=cfg["chunk_days"]), d_to)
-        fetch_window(client, kind, cfg, cache, cur, end, acc, state)
+        fetch_window(client, kind, cfg, cache, cur, end, acc, state, tr)
         state["done_days"] = (end - d_from).days
         cur = end + timedelta(days=1)
     sys.stdout.write("\r" + " " * 78 + "\r")
@@ -541,26 +676,31 @@ def run(cfg, debug=False):
     print(paint("Реестр ФСА: сертификаты и декларации о соответствии", "d"))
     print()
 
-    pool, infos = [], {}
+    pool, infos, tr_by_doc = [], {}, {}
     try:
         # 1-2. Загрузка реестра и фильтр по продукции
         print(f" {paint('1.', 'b')} Загружаю реестр (истекают {d_from:%d.%m.%Y} - {d_to:%d.%m.%Y})")
         total_loaded = 0
         for kind in cfg["kinds"]:
-            acc = {"seen": set(), "matched": []}
+            acc = {"seen": set(), "matched": [], "trs": {}}
             try:
-                fetch_candidates(client, kind, cfg, cache, d_from, d_to, acc, state)
+                check_tech_reg_filter(client, kind, cfg, d_from, d_to)
+                for tr in (cfg["tech_regs"] or [None]):          # без ТР - читаем весь реестр
+                    fetch_candidates(client, kind, cfg, cache, d_from, d_to, acc, state, tr)
             finally:
                 total_loaded += len(acc["seen"])
                 pool += [(kind, it) for it in acc["matched"]]
+                for it in acc["matched"]:
+                    tr_by_doc[f"{kind}:{it['id']}"] = acc["trs"].get(it["id"], set())
                 if debug and acc["matched"]:
                     Path(f"debug_list_{kind}.json").write_text(
                         json.dumps(acc["matched"][0], ensure_ascii=False, indent=2), encoding="utf-8")
         for w in state["warnings"]:
             print(paint(f"    ВНИМАНИЕ, данные могли быть неполными: {w}", "y"))
         print(f"    ... {paint(fmt_int(total_loaded) + ' документов', 'd')}")
-        kw = ", ".join(cfg["keywords"]) or "без фильтра"
-        print(f" {paint('2.', 'b')} Отбираю нужную продукцию ({kw})")
+        trs = ", ".join(n for n, _ in cfg["tech_regs"]) or "любые"
+        kw = ", ".join(cfg["keywords"]) or "не используются"
+        print(f" {paint('2.', 'b')} Отбор: ТР - {trs}; слова в названии продукции - {kw}")
         print(f"    ... {paint(fmt_int(len(pool)) + ' документов', 'd')}")
     except NetworkGiveUp as e:
         stop(str(e))
@@ -610,7 +750,8 @@ def run(cfg, debug=False):
 
     rows = []
     for kind, it in pool:
-        row = build_row(kind, it, infos.get(f"{kind}:{it['id']}"), today, cfg["name_case"])
+        row = build_row(kind, it, infos.get(f"{kind}:{it['id']}"), today, cfg["name_case"],
+                        tr_by_doc.get(f"{kind}:{it['id']}", ()))
         if row["end_date"] and 0 <= row["days_left"] <= cfg["days"]:
             rows.append(row)
     rows.sort(key=lambda r: (r["days_left"], r["company"]))
@@ -673,7 +814,7 @@ def save_xlsx(rows, cols, path, cfg):
         for j, col in enumerate(cols, 1):
             cell = ws.cell(row=i, column=j)
             cell.font, cell.border = font, border
-            cell.alignment = Alignment(vertical="top", wrap_text=(col in ("company", "product")))
+            cell.alignment = Alignment(vertical="top", wrap_text=(col in ("company", "product", "tech_reg")))
             if col == "end_date":
                 cell.number_format = "DD.MM.YYYY"
             if col in ("end_date", "days_left"):
@@ -729,7 +870,14 @@ def main():
     ap.add_argument("--config", default=str(Path(__file__).with_name("config.ini")))
     ap.add_argument("--days", type=int, help="порог в днях (перекрывает config.ini)")
     ap.add_argument("--debug", action="store_true", help="сохранить сырые ответы сайта")
+    ap.add_argument("--list-tr", action="store_true", help="показать ТР, доступные для фильтра")
     args = ap.parse_args()
+
+    if args.list_tr:
+        print("ТР, которые можно указать в config.ini (параметр tech_regs):\n")
+        for name in TECH_REGS:
+            print("  " + tech_reg_label(name))
+        return
 
     cfg = load_config(args.config)
     if args.days:
